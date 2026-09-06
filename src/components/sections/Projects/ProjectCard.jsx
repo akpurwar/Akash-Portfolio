@@ -16,7 +16,7 @@ export default function ProjectCard({ project, Icon, isOpen, onToggle }) {
       <div className="project-card-content">
         <div className="project-top">
           <span className="project-number">{project.number}</span>
-          <div className="project-icon">
+          <div className={project.id === "resume-now" ? "project-icon resume-now-logo" : "project-icon"}>
             {project.logo ? (
               <img src={project.logo} alt={project.title} style={{ width: 36, height: 36, objectFit: "contain" }} />
             ) : Icon ? (

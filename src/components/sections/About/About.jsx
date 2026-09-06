@@ -20,7 +20,7 @@ export default function About() {
           <p>
             My core strength is frontend engineering — React, TypeScript,
             Redux and performance architecture — while also working across
-            the stack with Node.js, GraphQL and PostgreSQL.
+            the stack with Node.js, GraphQL and MongoDB.
           </p>
 
           <p>

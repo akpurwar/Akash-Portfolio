@@ -76,7 +76,7 @@ export const projects = [
       "Playwright"
     ],
     link: "https://www.resume-now.com",
-    logo: "/logos/resume-now.svg"
+    logo: "/logos/logo-resume-now.svg"
   },
 
   {

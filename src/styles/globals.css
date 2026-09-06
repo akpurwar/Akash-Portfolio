@@ -563,11 +563,15 @@ button {
   border: 1px solid #303030;
 }
 
-.project-icon-placeholder {
+.project-icon.resume-now-logo {
+  background: #ffffff;
+}
+
+.project-icon img {
   width: 36px;
   height: 36px;
-  background: #222;
-  border-radius: 6px;
+  object-fit: contain;
+  display: block;
 }
 
 .project-category {
@@ -805,11 +809,19 @@ footer {
 
   .container.hero-grid {
     gap: 40px;
+    flex-direction: column;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 
   .code-card {
     width: 100%;
+    max-width: 100%;
     justify-self: stretch;
+    flex: 1 1 100%;
   }
 
   .project-grid {
@@ -921,6 +933,10 @@ footer {
   .social-links {
     flex-direction: column;
     align-items: center;
+  }
+
+  .back-to-top {
+    right: 20px;
   }
 
   .footer-inner {
