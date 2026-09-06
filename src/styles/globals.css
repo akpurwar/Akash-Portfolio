@@ -897,8 +897,8 @@ footer {
   }
 
   .cursor {
-    right: 18px;
-    bottom: 18px;
+    right: auto;
+    bottom: auto;
   }
 
   .section {
