@@ -349,8 +349,8 @@ button {
   height: 15px;
   background: var(--accent);
   position: absolute;
-  right: 18px;
-  bottom: 18px;
+  right: auto;
+  bottom: auto;
   animation: blink 1.2s steps(1) infinite;
 }
 
@@ -894,6 +894,11 @@ footer {
   .code-body {
     overflow-x: auto;
     min-width: 540px;
+  }
+
+  .cursor {
+    right: 18px;
+    bottom: 18px;
   }
 
   .section {
