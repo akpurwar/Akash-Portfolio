@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function ExperienceCard({ experience, index }) {
   return (
     <article className="experience-card">
-      <div className="experience-index">0{index + 1}</div>
+      <div className="experience-index"></div>
 
       {experience.logo && (
         <div className="experience-logo-wrap">
@@ -36,8 +36,6 @@ export default function ExperienceCard({ experience, index }) {
           ))}
         </ul>
       </div>
-
-      <ArrowUpRight className="experience-arrow" size={22} />
     </article>
   );
 }

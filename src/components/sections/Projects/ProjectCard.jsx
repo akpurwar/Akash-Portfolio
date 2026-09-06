@@ -15,7 +15,7 @@ export default function ProjectCard({ project, Icon, isOpen, onToggle }) {
 
       <div className="project-card-content">
         <div className="project-top">
-          <span className="project-number">{project.number}</span>
+          <span className="project-number"></span>
           <div className={project.id === "resume-now" ? "project-icon resume-now-logo" : "project-icon"}>
             {project.logo ? (
               <img src={project.logo} alt={project.title} style={{ width: 36, height: 36, objectFit: "contain" }} />
@@ -44,9 +44,9 @@ export default function ProjectCard({ project, Icon, isOpen, onToggle }) {
             ))}
           </div>
 
-          <a href={project.link || "#"} className="project-link" target={project.link ? "_blank" : undefined} rel={project.link ? "noreferrer" : undefined}>
-            View case study <ArrowUpRight size={17} />
-          </a>
+          {project.link && <a href={project.link || "#"} className="project-link" target={project.link ? "_blank" : undefined} rel={project.link ? "noreferrer" : undefined}>
+            Live Link
+          </a>}
         </div>
       </div>
     </article>
